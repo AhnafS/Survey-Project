@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Health Survey</h1>
+    <h2 id="desc">Take this survey for your health</h2>
+
+    <form id="survey-form">
+
+        <p>Name</p>
+        <input type="text" name="name" id="name-input" placeholder="Enter Your Name">
+
+        <p>Email</p>
+        <input type="email" name="email" id="email-input" placeholder="Please Enter Your Email">
+
+        <p>Age</p>
+        <input type="number" name="age" id="age-input">
+
+        <p>How Would You Currently Describe Your Physical State</p>
+        <select name="physical-condition" id="physical-condition">
+            <option selected disabled value="">Select An Option</option>
+            <option value="underweight">Underweight</option>
+            <option value="normal">Normal</option>
+            <option value="athletic">Athletic</option>
+            <option value="overweight">Overweight</option>
+            <option value="obese">Obese</option>
+        </select>
+
+        <p>Are You Currently Exercising?</p>
+        <input type="radio" name="yesOrNo" id="exercising" value="yes">
+        <label for="yesOrNo">Yes</label>
+        <input type="radio" name="yesOrNo" id="exercising" value="no">
+        <label for="yesOrNo">No</label>
+
+        <p>When Do You EXercise Or When Do You Plan To Exercise</p>
+        <select name="plan" id="plan">
+            <option selected disabled value="">Please Select one</option>
+            <option value="Morning">Morning</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Evening">Evening</option>
+            <option value="Night">Night</option>
+        </select>
+
+        <p>What Exercise Do You Do, Or Plan To Do?</p>
+        <input type="checkbox" name="planToDo" id="planToDo" value="pushups">
+        <label for="planToDo">PushUps</label>
+
+        <input type="checkbox" name="planToDo" id="planToDo" value="situps">
+        <label for="planToDo">SitUps</label>
+
+        <input type="checkbox" name="planToDo" id="planToDo" value="planks">
+        <label for="planToDo">Planks</label>
+
+        <input type="checkbox" name="planToDo" id="planToDo" value="pullups">
+        <label for="planToDo">Pullups</label>
+
+        <p>Is There Any Diet You Follow, If So Please Explain It</p>
+        <input type="text" name="diet" id="diet">
+    </form>
+</body>
+</html>
