@@ -4,63 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Survey</title>
 </head>
 <body>
-    <h1 id="title">Health Survey</h1>
-    <h2 id="desc">Take this survey for your health</h2>
+    <main id="content">
+        <h1 id="title">Health Survey</h1>
+        <h2 id="desc">Take this survey for your health</h2>
 
-    <form id="survey-form">
+        <form id="survey-form">
 
-        <p>Name</p>
-        <input type="text" name="name" id="name-input" placeholder="Enter Your Name">
+            <p>Name</p>
+            <input type="text" name="name" id="name-input" placeholder="Enter Your Name">
 
-        <p>Email</p>
-        <input type="email" name="email" id="email-input" placeholder="Please Enter Your Email">
+            <p>Email</p>
+            <input type="email" name="email" id="email-input" placeholder="Please Enter Your Email">
 
-        <p>Age</p>
-        <input type="number" name="age" id="age-input">
+            <p>Age</p>
+            <input type="number" name="age" id="age-input" placeholder="Input Age">
 
-        <p>How Would You Currently Describe Your Physical State</p>
-        <select name="physical-condition" id="physical-condition">
-            <option selected disabled value="">Select An Option</option>
-            <option value="underweight">Underweight</option>
-            <option value="normal">Normal</option>
-            <option value="athletic">Athletic</option>
-            <option value="overweight">Overweight</option>
-            <option value="obese">Obese</option>
-        </select>
+            <p>How Would You Currently Describe Your Physical State</p>
+            <select name="physical-condition" id="physical-condition">
+                <option selected disabled value="">Select An Option</option>
+                <option value="underweight">Underweight</option>
+                <option value="normal">Normal</option>
+                <option value="athletic">Athletic</option>
+                <option value="overweight">Overweight</option>
+                <option value="obese">Obese</option>
+            </select>
 
-        <p>Are You Currently Exercising?</p>
-        <input type="radio" name="yesOrNo" id="exercising" value="yes">
-        <label for="yesOrNo">Yes</label>
-        <input type="radio" name="yesOrNo" id="exercising" value="no">
-        <label for="yesOrNo">No</label>
+            <p>Are You Currently Exercising?</p>
+            <div class="input-inline">
+                <input type="radio" name="yesOrNo" id="input-radio" value="yes">
+                <label for="yesOrNo">Yes</label> <br>
+                <input type="radio" name="yesOrNo" id="input-radio" value="no">
+                <label for="yesOrNo">No</label>
+            </div>
 
-        <p>When Do You EXercise Or When Do You Plan To Exercise</p>
-        <select name="plan" id="plan">
-            <option selected disabled value="">Please Select one</option>
-            <option value="Morning">Morning</option>
-            <option value="Afternoon">Afternoon</option>
-            <option value="Evening">Evening</option>
-            <option value="Night">Night</option>
-        </select>
+            <p>When Do You EXercise Or When Do You Plan To Exercise</p>
+            <select name="plan" id="plan">
+                <option selected disabled value="">Please Select one</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+                <option value="Night">Night</option>
+            </select>
 
-        <p>What Exercise Do You Do, Or Plan To Do?</p>
-        <input type="checkbox" name="planToDo" id="planToDo" value="pushups">
-        <label for="planToDo">PushUps</label>
+            <p>What Exercise Do You Do, Or Plan To Do?</p>
+            <div class="input-inline">
+                <input type="checkbox" name="input-checkbox" id="input-checkbox" value="pushups">
+                <label for="input-checkbox">PushUps</label> <br>
 
-        <input type="checkbox" name="planToDo" id="planToDo" value="situps">
-        <label for="planToDo">SitUps</label>
+                <input type="checkbox" name="input-checkbox" id="input-checkbox" value="situps">
+                <label for="input-checkbox">SitUps</label> <br>
 
-        <input type="checkbox" name="planToDo" id="planToDo" value="planks">
-        <label for="planToDo">Planks</label>
+                <input type="checkbox" name="input-checkbox" id="input-checkbox" value="planks">
+                <label for="input-checkbox">Planks</label> <br>
 
-        <input type="checkbox" name="planToDo" id="planToDo" value="pullups">
-        <label for="planToDo">Pullups</label>
+                <input type="checkbox" name="input-checkbox" id="input-checkbox" value="pullups">
+                <label for="input-checkbox">Pullups</label> <br>
+            </div>
 
-        <p>Is There Any Diet You Follow, If So Please Explain It</p>
-        <input type="text" name="diet" id="diet">
-    </form>
+            <p>Is There Any Diet You Follow, If So Please Explain It</p>
+            <textarea name="comments" id="comments"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
 </body>
 </html>
